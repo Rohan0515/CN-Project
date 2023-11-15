@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Service Provider Plans</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        /* Add your styling here */
+        body {
+            background-color: #ff4d4d; /* Red background color */
+            background-image: url("pic10.jpg");
+            position: relative;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .network-symbol {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            color: #ffffff;
+        }
+
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #17a2b8;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Added margin between cards */
+}
+
+.card-title {
+            color: #343a40;
+        }
+
+        .btn-primary {
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+        }
+
+        .btn-primary:hover {
+            background-color: #138496;
+        }
+
+        .plan-details {
+            margin-top: 20px;
+        }
+
+        .plan-details h5 {
+            color: #343a40;
+        }
+    </style>
+</head>
+<body>
+    <span class="network-symbol">&#127760;</span> <!-- Network symbol -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><b>MANIPAL NETWORK SERVICE PROVIDER </b></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Your existing plan cards -->
+
+        <!-- User login form -->
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Basic Plan</h5>
+                        <div class="plan-details">
+                            <p><strong>Range:</strong> 0-100 Devices</p>
+                            <p><strong>Price:</strong> Rs.10/Device</p>
+                            <p><strong>Validity:</strong> 3 Months</p>
+                        </div>
+                        <hr>
+                        <div class="form-check">
+                            <input type="checkbox" id="basicPlan" class="form-check-input">
+                            <label for="basicPlan" class="form-check-label">Select Basic Plan</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Standard Plan</h5>
+                        <div class="plan-details">
+                            <p><strong>Range:</strong> 100-400 Devices</p>
+                            <p><strong>Price:</strong> Rs.50/Device</p>
+                            <p><strong>Validity:</strong> 6 Months</p>
+                        </div>
+                        <hr>
+                        <div class="form-check">
+                            <input type="checkbox" id="standardPlan" class="form-check-input">
+                            <label for="standardPlan" class="form-check-label">Select Standard Plan</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Premium Plan</h5>
+                        <div class="plan-details">
+                            <p><strong>Range:</strong> 400-1000 Devices</p>
+                            <p><strong>Price:</strong> Rs.80/Device</p>
+                            <p><strong>Validity:</strong> 12 Months</p>
+                        </div>
+                        <hr>
+                        <div class="form-check">
+                            <input type="checkbox" id="premiumPlan" class="form-check-input">
+                            <label for="premiumPlan" class="form-check-label">Select Premium Plan</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Advanced Plan</h5>
+                        <div class="plan-details">
+                            <p><strong>Range:</strong> Custom</p>
+                            <p><strong>Price:</strong>Rs.100/Device</p>
+                            <p><strong>Validity:</strong> 18 Months</p>
+                        </div>
+                        <hr>
+                        <div class="form-check">
+                            <input type="checkbox" id="customPlan" class="form-check-input">
+                            <label for="customPlan" class="form-check-label">Select Custom Plan</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-3">
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Redirect</h5>
+                        <form id="loginForm" action="#" method="POST">
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" id="remember" class="form-check-input">
+                                <label for="remember" class="form-check-label">Remember me</label>
+                            </div>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-primary" onclick="redirectUser()">Take to MAIN PAGE</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function redirectUser() {
+            // You can add logic here to handle the login process if needed
+            // For now, simply redirecting to the specified path
+            window.location.href = "./calc.html";
+        }
+    </script>
+</body>
+</html>
